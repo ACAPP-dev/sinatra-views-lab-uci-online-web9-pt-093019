@@ -9,7 +9,7 @@
     <h1>Today</h1>
 
     <% date_today = Date.today("The date is %A, %m %d, %y") %>
-    <%= "<p>The date is #{date_today}</p>" %>
+    <%= "<p>#{date_today.strftime("The date is %A, %B %d, %Y")}</p>" %>
   </body
 
 </html>
